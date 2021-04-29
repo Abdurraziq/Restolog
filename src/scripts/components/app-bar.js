@@ -20,7 +20,7 @@ class AppBar extends HTMLElement {
                         <ul class="menu__list">
                             <li class="menu__item"><a href="/">Home</a></li>
                             <li class="menu__item"><a href="#">Favorite</a></li>
-                            <li class="menu__item"><a href="https://raziq-tech.com/about">About Us</a></li>
+                            <li class="menu__item"><a href="https://raziq.tech/about">About Us</a></li>
                         </ul>
                     </nav>
                 </div>
