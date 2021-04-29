@@ -1,0 +1,28 @@
+/* --- Hero --- */
+.hero {
+    display: grid;
+    align-content: center;
+    height: 400px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(180deg, #12151a 0%, #252a3477 50%, #12151a 100%),
+        url("../public/images/heros/hero-image_4.jpg");
+    background-position: center;
+    padding: 24px;
+}
+
+.hero__heading {
+    font-size: 3em;
+}
+
+.hero__subheading {
+    font-size: 1.3em;
+    margin: 0.5em 0 2em;
+}
+
+.hero__tagline {
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: monospace;
+}

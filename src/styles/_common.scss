@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* --- Body --- */
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 16px;
+    background-color: $accent-color;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+
+    &:focus {
+        top: 72px;
+    }
+}
+
+/* --- Container --- */
+
+.container {
+    padding: 0 16px;
+    margin: auto;
+    max-width: 500px;
+}
+
+main.container {
+    min-height: calc(100vh - 586px);
+}
