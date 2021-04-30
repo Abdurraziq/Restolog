@@ -18,6 +18,7 @@
     "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.2.4",
     "eslint": "^7.25.0",
+    "eslint-config-google": "^0.14.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "jasmine-ajax": "^4.0.0",
