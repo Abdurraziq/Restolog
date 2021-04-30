@@ -1,61 +1,62 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 /* --- Body --- */
 
 body {
-    font-family: sans-serif;
-    padding: 0;
+  font-family: sans-serif;
+  padding: 0;
 }
 
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 16px;
-    background-color: $accent-color;
-    color: white;
-    padding: 8px;
-    z-index: 100;
+/* --- Skip link --- */
 
-    &:focus {
-        top: 72px;
-    }
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 16px;
+  background-color: $accent-color;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+
+  &:focus {
+    top: 72px;
+  }
 }
 
 /* --- Container --- */
 
 .container {
-    padding: 0 16px;
-    margin: auto;
-    max-width: 500px;
+  padding: 0 16px;
+  margin: auto;
+  max-width: 500px;
 }
 
 main.container {
-    min-height: calc(100vh - 586px);
+  min-height: calc(100vh - 586px);
 }
-
 
 /* --- Loading animation --- */
 @keyframes loading {
-    to {
-        transform: rotate(360deg)
-        ;
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .loading {
-    display: block;
-    width: 56px;
-    height: 56px;
-    border: 5px solid;
-    border-right-color: transparent;
-    border-radius: 50%;
-    animation: 1s linear infinite loading;
-    margin: 64px auto;
+  display: block;
+  width: 56px;
+  height: 56px;
+  border: 5px solid;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: 1s linear infinite loading;
+  margin: 64px auto;
 }

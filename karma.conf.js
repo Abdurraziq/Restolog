@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Mon Apr 26 2021 05:41:28 GMT+0800 (Waktu Indonesia Tengah)
 
-module.exports = function (config) {
+module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -13,7 +13,7 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'specs/**/*Spec.js'
+      'specs/**/*Spec.js',
     ],
 
     // list of files / patterns to exclude
@@ -22,7 +22,7 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'specs/**/*Spec.js': ['webpack', 'sourcemap']
+      'specs/**/*Spec.js': ['webpack', 'sourcemap'],
     },
 
     webpack: {
@@ -31,13 +31,13 @@ module.exports = function (config) {
       // webpack watches dependencies
       // webpack configuration
       devtool: 'inline-source-map',
-      mode: 'development'
+      mode: 'development',
     },
 
     webpackMiddleware: {
       // webpack-dev-middleware configuration
       // i. e.
-      stats: 'errors-only'
+      stats: 'errors-only',
     },
 
     // test results reporter to use
@@ -56,7 +56,8 @@ module.exports = function (config) {
     || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG */
     logLevel: config.LOG_INFO,
 
-    // enable / disable watching file and executing tests whenever any file changes
+    // enable / disable watching file and executing tests whenever any file
+    // changes
     autoWatch: true,
 
     // start these browsers
@@ -69,6 +70,6 @@ module.exports = function (config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
-  })
-}
+    concurrency: Infinity,
+  });
+};

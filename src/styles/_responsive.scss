@@ -1,64 +1,64 @@
 @media screen and (max-width: $tablet) {
-    body.hideoverflow {
-        overflow-y: hidden;
-    }
+  body.hideoverflow {
+    overflow-y: hidden;
+  }
 
-    .menu__open .menu {
-        height: 100%;
-    }
+  .menu__open .menu {
+    height: 100%;
+  }
 
-    .app-bar.menu__open {
-        background-color: $dark-color;
-    }
+  .app-bar.menu__open {
+    background-color: $dark-color;
+  }
 
-    .menu__item:not(:last-child) {
-        border-bottom: $menu_border;
-    }
+  .menu__item:not(:last-child) {
+    border-bottom: $menu_border;
+  }
 }
 
 @media screen and (min-width: $tablet) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 
-    .menu {
-        position: static;
-        display: block;
-        height: auto;
-        background-color: transparent;
-    }
+  .menu {
+    position: static;
+    display: block;
+    height: auto;
+    background-color: transparent;
+  }
 
-    #menu-btn {
-        display: none;
-    }
+  #menu-btn {
+    display: none;
+  }
 
-    .menu__list {
-        padding: 0;
-    }
+  .menu__list {
+    padding: 0;
+  }
 
-    .menu__item {
-        display: inline-block;
+  .menu__item {
+    display: inline-block;
 
-        a {
-            padding: 16px;
-        }
+    a {
+      padding: 16px;
     }
+  }
 
-    .section__title {
-        font-size: 1.7em;
-    }
+  .section__title {
+    font-size: 1.7em;
+  }
 
-    .restaurant__list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .restaurant__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: $desktop) {
-    .container {
-        max-width: 1100px;
-    }
+  .container {
+    max-width: 1100px;
+  }
 
-    .restaurant__list {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .restaurant__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

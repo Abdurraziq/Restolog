@@ -1,87 +1,87 @@
 /* --- Section --- */
 .section__title {
-    text-align: center;
-    margin-bottom: 32px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 #catalog {
-    padding-top: 90px;
+  padding-top: 40px;
 }
 
 /* --- Restaurant --- */
 .restaurant__list {
-    width: 100%;
-    display: grid;
-    gap: 16px;
+  width: 100%;
+  display: grid;
+  gap: 16px;
 }
 
 .restaurant__item {
-    border: $border;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    transition: box-shadow 0.3s ease;
+  border: $border;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.3s ease;
 
-    &:hover {
-        box-shadow: 0 4px 8px 0 #00000033;
-    }
+  &:hover {
+    box-shadow: 0 4px 8px 0 #00000033;
+  }
 }
 
-.restaurant__img {
-    position: relative;
-    padding-bottom: 56.2%;
-    background: linear-gradient(180deg, #12151a 0%, #00000000 50%);
+.restaurant__thumbnail {
+  position: relative;
+  padding-bottom: 56.2%;
+  background: linear-gradient(0deg, #12151a 0%, #00000000 35%);
 
-    img {
-        position: absolute;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }
 
 .restaurant__content {
-    padding: 24px;
+  padding: 24px;
 }
 
 .restaurant__title {
-    font-size: 1.25em;
-    font-weight: 600;
-    color: $primary-color;
-    margin-bottom: 16px;
-    display: inline-block;
-    text-decoration: none;
-    transition: color 0.3s;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: $primary-color;
+  margin-bottom: 16px;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.3s;
 
-    &:hover {
-        color: darken($primary-color, 10%);
-    }
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
 }
 
 .restaurant__city,
 .restaurant__rating {
-    position: absolute;
-    top: 16px;
-    color: white;
-    padding: 4px 8px;
+  position: absolute;
+  bottom: 16px;
+  color: white;
+  padding: 4px 8px;
 }
 
 .restaurant__city {
-    left: 16px;
+  left: 16px;
 }
 
 .restaurant__rating {
-    right: 16px;
+  right: 16px;
 }
 
 .restaurant__description {
-    line-height: 1.5;
-    color: $dark-color;
-    font-size: 0.95em;
-    overflow: hidden;
-    text-overflow: clip;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+  line-height: 1.5;
+  color: $dark-color;
+  font-size: 0.95em;
+  overflow: hidden;
+  text-overflow: clip;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }

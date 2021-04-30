@@ -1,6 +1,6 @@
-const { merge } = require('webpack-merge')
-const common = require('./webpack.common')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const {merge} = require('webpack-merge');
+const common = require('./webpack.common');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = merge(common, {
@@ -14,10 +14,10 @@ module.exports = merge(common, {
           {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env']
-            }
-          }
-        ]
+              presets: ['@babel/preset-env'],
+            },
+          },
+        ],
       },
       {
         test: /\.s[ac]ss$/i,
@@ -28,14 +28,14 @@ module.exports = merge(common, {
               publicPath: '../../',
             },
           },
-          "css-loader",
-          "sass-loader",
+          'css-loader',
+          'sass-loader',
         ],
       },
-    ]
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({filename: "assets/css/[name].css"})
-  ]
-})
+    new MiniCssExtractPlugin({filename: 'assets/css/[name].css'}),
+  ],
+});
