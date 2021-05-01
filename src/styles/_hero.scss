@@ -1,7 +1,7 @@
 .hero {
   display: grid;
   align-content: center;
-  height: 400px;
+  height: $hero__height;
   width: 100%;
   color: white;
   text-align: center;
@@ -12,16 +12,16 @@
 }
 
 .hero__heading {
-  font-size: 3em;
+  font-size: $hero__heading__font-size;
 }
 
 .hero__subheading {
-  font-size: 1.3em;
+  font-size: $hero__subheading__font-size;
   margin: 0.5em 0 2em;
 }
 
 .hero__tagline {
   font-style: italic;
-  font-size: 1.25em;
-  font-family: monospace;
+  font-size: $hero__tagline__font-size;
+  font-family: $hero__tagline__font;
 }

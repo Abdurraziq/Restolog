@@ -12,7 +12,7 @@
   }
 
   .menu__item:not(:last-child) {
-    border-bottom: $menu_border;
+    border-bottom: $menu__border;
   }
 }
 
@@ -50,6 +50,14 @@
 
   .restaurant__list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .restaurant__title {
+    font-size: 1.25em;
+  }
+
+  .restaurant__description {
+    font-size: 0.95em;
   }
 }
 

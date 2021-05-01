@@ -16,7 +16,7 @@
 }
 
 .restaurant__item {
-  border: $border;
+  border: $restaurant__item__border;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
@@ -30,7 +30,7 @@
 .restaurant__thumbnail {
   position: relative;
   padding-bottom: 56.2%;
-  background: linear-gradient(0deg, #12151a 0%, #00000000 35%);
+  background: $restaurant__thumbnail__background;
 
   img {
     position: absolute;
@@ -46,7 +46,7 @@
 }
 
 .restaurant__title {
-  font-size: 1.25em;
+  font-size: $restaurant__title__font-size;
   font-weight: 600;
   color: $primary-color;
   margin-bottom: 16px;
@@ -76,12 +76,12 @@
 }
 
 .restaurant__description {
-  line-height: 1.5;
+  line-height: 1.7;
   color: $dark-color;
-  font-size: 0.95em;
+  font-size: $restaurant__desc__font-size;
   overflow: hidden;
   text-overflow: clip;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: $restaurant__desc__max-lines;
   -webkit-box-orient: vertical;
 }

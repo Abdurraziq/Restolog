@@ -2,13 +2,13 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 72px;
+  height: $app_bar__height;
   z-index: 1;
   transition: background-color 0.4s;
 
   &.background {
     background-color: $dark-color;
-    box-shadow: 0 1px 6px 0 #20212447;
+    box-shadow: $app_bar__shadow;
   }
 
   > .container {
@@ -23,7 +23,7 @@
   display: inline-block;
   text-decoration: none;
   color: white;
-  font-size: 1.2em;
+  font-size: $app-bar__font-size;
   font-weight: 600;
   transition: opacity 0.5s;
 
@@ -39,12 +39,12 @@
 /* --- Menu --- */
 
 #menu-btn {
-  background-color: #b4b4b44f;
-  border: 1px solid #888888;
+  background-color: $menu_btn__background-color;
+  border: $menu-btn__border;
   color: white;
-  font-size: 1.2em;
-  height: 44px;
-  width: 44px;
+  font-size: $app-bar__font-size;
+  height: $menu_btn__size;
+  width: $menu_btn__size;
 }
 
 .menu {
@@ -55,7 +55,7 @@
   height: 0;
   transition: height 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   overflow: hidden;
-  background-color: $dark_color1;
+  background-color: $menu__background-color;
 }
 
 .menu__list {
