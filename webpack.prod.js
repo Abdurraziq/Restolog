@@ -39,7 +39,7 @@ module.exports = merge(common, {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({filename: 'assets/css/[name].css'}),
     new FaviconsWebpackPlugin({
-      logo: './src/public/images/logo/logo.svg',
+      logo: './src/public/images/logo/icon.png',
       prefix: 'assets/icons/',
     }),
   ],
