@@ -1,0 +1,206 @@
+resto-details {
+  display: block;
+
+  p {
+    line-height: 1.7;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    color: $primary-color;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    color: $primary-color;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-size: 1.15em;
+    color: $accent-color;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+
+  ul {
+    padding-inline-start: 24px;
+  }
+
+  li {
+    line-height: 1.5;
+  }
+}
+
+/* --- Resto Info --- */
+
+resto-info {
+  display: block;
+}
+
+.description {
+  border: $restaurant__item__border;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.description__content {
+  display: grid;
+  gap: 16px;
+}
+
+.resto-img {
+  position: relative;
+  padding-bottom: 56.2%;
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+}
+
+.info {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.main-info,
+.resto-menus {
+  border: $restaurant__item__border;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.main-info {
+  h2 {
+    margin-bottom: 16px;
+  }
+}
+
+.menus {
+  display: grid;
+  gap: 16px;
+}
+
+/* --- Resto review --- */
+resto-review {
+  display: block;
+  border: $restaurant__item__border;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 24px;
+
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+}
+
+.review_item {
+  padding: 8px 0;
+  display: flex;
+}
+
+.reviewer_photo {
+  margin-right: 8px;
+}
+
+.review_content,
+form {
+  background-color: #f7f7f7;
+  flex: 1;
+  padding: 16px;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+textarea {
+  font-family: $main__font;
+}
+
+.review_name {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.review_date {
+  font-size: 0.8em;
+  color: $dark_color1;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #d0d0d0;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+  font-size: 0.9em;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 4px 8px 0 #00000033;
+    outline: none;
+  }
+}
+
+button[type="submit"] {
+  background-color: $accent-color;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 24px;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.2s ease-in-out;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &:active {
+    background-color: darken($accent-color, 20%);
+  }
+}
+
+// for load more review button item.
+#load-more {
+  display: block;
+  margin: 16px auto 24px;
+  background-color: transparent;
+  border: 1px solid $accent-color;
+  border-radius: 8px;
+  color: $accent-color;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:active {
+    background-color: $accent-color;
+    color: white;
+  }
+}
+
+#fav-button {
+  font-size: 36px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: $accent-color;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
