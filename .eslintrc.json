@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "es6": true
     },
     "extends": [
         "google"
@@ -11,6 +12,8 @@
         "sourceType": "module"
     },
     "rules": {
-        "require-jsdoc": 0
+        "require-jsdoc": 0,
+        "linebreak-style": 0,
+        "new-cap":"off"
     }
 }
