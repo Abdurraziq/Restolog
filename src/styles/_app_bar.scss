@@ -1,9 +1,9 @@
-.app-bar {
+app-bar {
   position: fixed;
   top: 0;
   width: 100%;
   height: $app_bar__height;
-  z-index: 1;
+  z-index: 2;
   transition: background-color 0.4s;
 
   &.background {
@@ -11,7 +11,7 @@
     box-shadow: $app_bar__shadow;
   }
 
-  > .container {
+  >.container {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -26,21 +26,22 @@
   font-size: $app-bar__font-size;
   font-weight: 600;
   transition: opacity 0.5s;
+  padding: 10px 0;
 
   * {
     vertical-align: middle;
   }
 
   img {
-    margin-right: 8px;
+    margin-right: 2px;
   }
 }
 
 /* --- Menu --- */
 
 #menu-btn {
-  background-color: $menu_btn__background-color;
-  border: $menu-btn__border;
+  background-color: transparent;
+  border: none;
   color: white;
   font-size: $app-bar__font-size;
   height: $menu_btn__size;
@@ -49,13 +50,14 @@
 
 .menu {
   position: fixed;
-  top: 72px;
+  top: $app_bar__height;
   right: 0;
   width: 100%;
   height: 0;
   transition: height 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   overflow: hidden;
   background-color: $menu__background-color;
+  z-index: 1;
 }
 
 .menu__list {
@@ -72,6 +74,11 @@
     color: white;
     transition: opacity 0.5s;
     padding: 16px 0;
+  }
+
+  &.active {
+    border-bottom: 2.5px solid #ff2e63 !important;
+    font-weight: 700;
   }
 }
 

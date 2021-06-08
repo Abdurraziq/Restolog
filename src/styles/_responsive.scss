@@ -1,17 +1,17 @@
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: ($tablet - 0.1px)) {
   body.hideoverflow {
-    overflow-y: hidden;
+    overflow: hidden !important;
   }
 
   .menu__open .menu {
     height: 100%;
   }
 
-  .app-bar.menu__open {
+  app-bar.menu__open {
     background-color: $dark-color;
   }
 
-  .menu__item:not(:last-child) {
+  .menu__item {
     border-bottom: $menu__border;
   }
 }
@@ -21,6 +21,7 @@
     max-width: 720px;
   }
 
+  /* --- Menu --- */
   .menu {
     position: static;
     display: block;
@@ -44,11 +45,22 @@
     }
   }
 
-  .section__title {
-    font-size: 1.7em;
+  /* --- Hero Element --- */
+  .hero__heading {
+    font-size: $hero__heading__font-size;
   }
 
-  .restaurant__list {
+  .hero__subheading {
+    font-size: $hero__subheading__font-size;
+    margin: 0.5em 0 2em;
+  }
+
+  .hero__tagline {
+    font-size: $hero__tagline__font-size;
+  }
+
+  /* --- Resto list --- */
+  resto-list {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -59,6 +71,19 @@
   .restaurant__description {
     font-size: 0.95em;
   }
+
+  /* --- Resto Info --- */
+  .info {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .main-info {
+    order: 2;
+  }
+
+  .menus {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: $desktop) {
@@ -66,7 +91,17 @@
     max-width: 1100px;
   }
 
-  .restaurant__list {
+  /* --- Resto list --- */
+  resto-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* --- Resto Info --- */
+  .description__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .thumbnail {
+    order: 1;
   }
 }

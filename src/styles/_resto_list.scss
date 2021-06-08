@@ -1,15 +1,5 @@
-/* --- Section --- */
-.section__title {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-#catalog {
+resto-list {
   padding-top: 40px;
-}
-
-/* --- Restaurant --- */
-.restaurant__list {
   width: 100%;
   display: grid;
   gap: 16px;
@@ -49,7 +39,7 @@
   font-size: $restaurant__title__font-size;
   font-weight: 600;
   color: $primary-color;
-  margin-bottom: 16px;
+  padding: 8px 0 16px;
   display: inline-block;
   text-decoration: none;
   transition: color 0.3s;

@@ -1,27 +1,27 @@
-.hero {
+#hero {
   display: grid;
   align-content: center;
   height: $hero__height;
   width: 100%;
   color: white;
   text-align: center;
-  background: linear-gradient(180deg, #12151a 0%, #252a3477 50%, #12151a 100%),
-    url("../public/images/heros/hero-image_4.jpg");
+  background-image: linear-gradient(180deg, #12151a 0%, #252a3477 50%, #12151a 100%),
+    url("../public/images/heros/hero-image.jpg");
   background-position: center;
   padding: 24px;
 }
 
 .hero__heading {
-  font-size: $hero__heading__font-size;
+  font-size: $hero__heading__font-size__sm;
 }
 
 .hero__subheading {
-  font-size: $hero__subheading__font-size;
+  font-size: $hero__subheading__font-size__sm;
   margin: 0.5em 0 2em;
 }
 
 .hero__tagline {
   font-style: italic;
-  font-size: $hero__tagline__font-size;
+  font-size: $hero__tagline__font-size__sm;
   font-family: $hero__tagline__font;
 }
