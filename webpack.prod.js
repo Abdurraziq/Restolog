@@ -1,8 +1,6 @@
 const {merge} = require('webpack-merge');
 const common = require('./webpack.common');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -36,11 +34,6 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({filename: 'assets/css/[name].css'}),
-    new FaviconsWebpackPlugin({
-      logo: './src/public/images/logo/icon.png',
-      prefix: 'assets/icons/',
-    }),
+    new MiniCssExtractPlugin({filename: 'assets/css/[name][hash].css'}),
   ],
 });
