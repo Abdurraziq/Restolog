@@ -6,6 +6,7 @@
   "scripts": {
     "start-dev": "webpack serve --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js",
+    "start-server": "node server.js",
     "lint": "eslint ./src",
     "test": "karma start"
   },
