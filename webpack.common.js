@@ -15,10 +15,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.svg$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/img/[hash][ext]',
+        },
+      },
+      {
+        test: /\.(png|jpg|jpeg)$/i,
+        use: {
+          loader: 'responsive-loader',
+          options: {
+            adapter: require('responsive-loader/sharp'),
+            outputPath: './assets/img',
+            quality: 50,
+            progressive: true,
+          },
         },
       },
       {

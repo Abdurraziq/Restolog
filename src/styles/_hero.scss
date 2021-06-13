@@ -1,14 +1,29 @@
-#hero {
+hero-element {
   display: grid;
   align-content: center;
   height: $hero__height;
   width: 100%;
   color: white;
   text-align: center;
-  background-image: linear-gradient(180deg, #12151a 0%, #252a3477 50%, #12151a 100%),
-    url("../public/images/heros/hero-image.jpg");
+  background: linear-gradient(180deg, #12151a 0%, #252a3477 50%, #12151a 100%);
   background-position: center;
   padding: 24px;
+  position: relative;
+  
+  picture,
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  picture {
+    position: absolute;
+    z-index: -1;
+  }
+
+  img {
+    object-fit: cover;
+  }
 }
 
 .hero__heading {
