@@ -14,7 +14,9 @@ class RestoItem extends HTMLElement {
     this.innerHTML = /* html*/`
       <article class="restaurant__item">
         <div class="restaurant__thumbnail">
-          <img src="${CONFIG.SMALL_BASE_IMAGE_URL}${pictureId}" 
+          <img
+            class="lazyload"
+            data-src="${CONFIG.SMALL_BASE_IMAGE_URL}${pictureId}" 
             alt="Gambar restaurant ${name}">
           <p class="restaurant__rating">⭐ ${rating}</p>
           <p class="restaurant__city">🏠 ${city}</p>
