@@ -44,6 +44,7 @@
     "workbox-webpack-plugin": "^6.1.5"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "regenerator-runtime": "^0.13.7"
   }
 }
