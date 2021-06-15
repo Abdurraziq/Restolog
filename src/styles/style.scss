@@ -1,8 +1,17 @@
 @import 'variabels';
 @import 'common';
+
+// Component
 @import 'app_bar';
+@import 'button';
 @import 'hero';
-@import 'resto_list';
 @import 'footer';
+@import 'skeleton';
+@import 'snackbar';
+
+// Page
 @import 'resto_details';
+@import 'resto_list';
+
+// Responsive
 @import 'responsive';
