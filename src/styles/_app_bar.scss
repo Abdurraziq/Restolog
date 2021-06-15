@@ -4,7 +4,6 @@ app-bar {
   width: 100%;
   height: $app_bar__height;
   z-index: 2;
-  transition: background-color 0.4s;
 
   &.background {
     background-color: $dark-color;

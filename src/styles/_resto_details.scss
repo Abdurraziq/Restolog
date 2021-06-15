@@ -3,6 +3,7 @@ resto-details {
 
   p {
     line-height: 1.7;
+    font-size: $resto__desc__font-size;
   }
 
   h1 {
@@ -40,13 +41,13 @@ resto-info {
 }
 
 .description {
-  border: $restaurant__item__border;
+  border: $resto__item__border;
   border-radius: 8px;
   padding: 24px;
   margin-bottom: 16px;
 }
 
-.description__content {
+.desc__content {
   display: grid;
   gap: 16px;
 }
@@ -72,7 +73,7 @@ resto-info {
 
 .main-info,
 .resto-menus {
-  border: $restaurant__item__border;
+  border: $resto__item__border;
   border-radius: 8px;
   padding: 24px;
 }
@@ -91,7 +92,7 @@ resto-info {
 /* --- Resto review --- */
 resto-review {
   display: block;
-  border: $restaurant__item__border;
+  border: $resto__item__border;
   border-radius: 8px;
   overflow: hidden;
   padding: 24px;

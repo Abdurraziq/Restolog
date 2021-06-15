@@ -25,11 +25,11 @@ class RestoInfo extends HTMLElement {
     this.innerHTML = /* html*/`
       <article class="description">
         <h1>${name}</h1>
-        <div class="description__content">
+        <div class="desc__content">
           <div class="thumbnail">
             <div class="resto-img">
               <img
-                src="${CONFIG.MEDIUM_BASE_IMAGE_URL}${pictureId}"
+                src="${CONFIG.SMALL_BASE_IMAGE_URL}${pictureId}"
                 alt="Gambar restaurant ${name}">
             </div>
           </div>

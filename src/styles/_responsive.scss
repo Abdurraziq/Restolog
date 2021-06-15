@@ -64,15 +64,19 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .restaurant__title {
+  .resto__title {
     font-size: 1.25em;
   }
 
-  .restaurant__description {
+  .resto__description {
     font-size: 0.95em;
   }
 
-  /* --- Resto Info --- */
+  /* --- Resto detail --- */
+  resto-details p {
+    font-size: 0.95em;    
+  }
+
   .info {
     grid-template-columns: 2fr 1fr;
   }
@@ -96,8 +100,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* --- Resto Info --- */
-  .description__content {
+  /* --- Resto detail --- */
+  .desc__content {
     grid-template-columns: repeat(2, 1fr);
   }
 

@@ -35,15 +35,15 @@ $hero__tagline__font-size: 1.25em;
 $hero__tagline__font-size__sm: 1.1em;
 
 // Resto list
-$restaurant__item__border: 1px solid #d0d0d0;
-$restaurant__thumbnail__background: linear-gradient(
+$resto__item__border: 1px solid #d0d0d0;
+$resto__thumbnail__background: linear-gradient(
   0deg,
   #12151a 0%,
   #00000000 35%
 );
-$restaurant__title__font-size: 1.15em;
-$restaurant__desc__font-size: 0.9em;
-$restaurant__desc__max-lines: 5;
+$resto__title__font-size: 1.15em;
+$resto__desc__font-size: 0.9em;
+$resto__desc__max-lines: 5;
 
 // Footer
 $footer__height: 130px;

@@ -79,16 +79,21 @@ class RestoReview extends HTMLElement {
   }
 
   _createLoadMoreButton() {
-    this._loadMoreButton = document.createElement('button');
-    this._loadMoreButton.id = 'load-more';
-    this._loadMoreButton.textContent = 'Tampilkan review lainnya...';
-    this._reviewList.appendChild(this._loadMoreButton);
+    const loadMoreButton = /* html*/`
+      <li><button id="load-more">Tampilkan review lainnya...</button></li>
+    `;
+    this._reviewList.insertAdjacentHTML('beforeend', loadMoreButton);
+    this._loadMoreButton = this.querySelector('#load-more');
     this._loadMoreButton.addEventListener('click', this._loadMoreButtonHandler);
   }
 
+  /**
+   * Remove last review item that showing and than show all last review item.
+   * The last, remove load more button from this._reviewList element.
+   */
   _onLoadMoreButtonClick() {
     const allLastReview = this._reviews.slice(3, this._reviews.length);
-    const lastItem = this._reviewList.childNodes[11];
+    const lastItem = this._reviewList.childNodes[13];
     this._reviewList.removeChild(lastItem);
     this._renderReviews(allLastReview);
     this._loadMoreButton.remove();

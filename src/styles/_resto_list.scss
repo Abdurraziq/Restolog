@@ -5,8 +5,8 @@ resto-list {
   gap: 16px;
 }
 
-.restaurant__item {
-  border: $restaurant__item__border;
+.resto__item {
+  border: $resto__item__border;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
@@ -17,26 +17,30 @@ resto-list {
   }
 }
 
-.restaurant__thumbnail {
+.resto__thumbnail {
   position: relative;
   padding-bottom: 56.2%;
-  background: $restaurant__thumbnail__background;
+  background: $resto__thumbnail__background;
 
-  img {
+  img,
+  .skeleton__body {
     position: absolute;
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+
+  img {
     z-index: -1;
   }
 }
 
-.restaurant__content {
+.resto__content {
   padding: 24px;
 }
 
-.restaurant__title {
-  font-size: $restaurant__title__font-size;
+.resto__title {
+  font-size: $resto__title__font-size;
   font-weight: 600;
   color: $primary-color;
   padding: 8px 0 16px;
@@ -49,29 +53,29 @@ resto-list {
   }
 }
 
-.restaurant__city,
-.restaurant__rating {
+.resto__city,
+.resto__rating {
   position: absolute;
   bottom: 16px;
   color: white;
   padding: 4px 8px;
 }
 
-.restaurant__city {
+.resto__city {
   left: 16px;
 }
 
-.restaurant__rating {
+.resto__rating {
   right: 16px;
 }
 
-.restaurant__description {
+.resto__description {
   line-height: 1.7;
   color: $dark-color;
-  font-size: $restaurant__desc__font-size;
+  font-size: $resto__desc__font-size;
   overflow: hidden;
   text-overflow: clip;
   display: -webkit-box;
-  -webkit-line-clamp: $restaurant__desc__max-lines;
+  -webkit-line-clamp: $resto__desc__max-lines;
   -webkit-box-orient: vertical;
 }
