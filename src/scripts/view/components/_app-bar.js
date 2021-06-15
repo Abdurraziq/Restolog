@@ -126,8 +126,10 @@ class AppBar extends HTMLElement {
   backgroundHandler(isContainHeroElement) {
     if (isContainHeroElement) {
       this._removeAppBarBackground();
+      this._addTransition();
       window.addEventListener('scroll', this._pageScrollHendler);
     } else {
+      this._removeTransition();
       window.removeEventListener('scroll', this._pageScrollHendler);
       this._addBackgroundToAppBar();
     }
@@ -142,11 +144,21 @@ class AppBar extends HTMLElement {
       this._removeAppBarBackground();
   }
 
+  _addTransition() {
+    this.style.transition = 'background-color 0.4s';
+  }
+
+  _removeTransition() {
+    this.style.transition = null;
+  }
+
   _addBackgroundToAppBar() {
+    // this.classList.remove('no-background');
     this.classList.add('background');
   }
 
   _removeAppBarBackground() {
+    // this.classList.add('no-background');
     this.classList.remove('background');
   }
 }
