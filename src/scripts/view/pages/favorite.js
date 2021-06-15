@@ -6,7 +6,6 @@ class FavoritePage extends Page {
       basePageElement: /* html */`
         <section id="/main-content" class="container">
           <h1>Daftar Resturant Favorite</h1>
-          <div class="loading"></div>
         </section>
       `,
       contentElement: 'resto-list',
@@ -18,7 +17,6 @@ class FavoritePage extends Page {
   }
 
   _showContent() {
-    super._showContent();
     this.contentElement.restoList = this._data;
   }
 }

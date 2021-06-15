@@ -5,9 +5,7 @@ class HomePage extends Page {
     super({
       basePageElement: /* html */`
         <hero-element></hero-element>
-        <section id="/main-content" class="container">
-          <div class="loading"></div>
-        </section>
+        <section id="/main-content" class="container"></section>
       `,
       contentElement: 'resto-list',
     });
@@ -18,7 +16,6 @@ class HomePage extends Page {
   }
 
   _showContent() {
-    super._showContent();
     this.contentElement.restoList = this._data;
   }
 }

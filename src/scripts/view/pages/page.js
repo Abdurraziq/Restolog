@@ -7,6 +7,8 @@ class Page extends HTMLElement {
 
   connectedCallback() {
     this._render();
+    this.contentElement = document.createElement(this._contentElement);
+    this._contentContainer.appendChild(this.contentElement);
   }
 
   /**
@@ -20,17 +22,6 @@ class Page extends HTMLElement {
   _render() {
     this.innerHTML = this._basePageElement;
     this._contentContainer = this.querySelector('section.container');
-  }
-
-  _showContent() {
-    this._hideLoadingIndicator();
-    this.contentElement = document.createElement(this._contentElement);
-    this._contentContainer.appendChild(this.contentElement);
-  }
-
-  _hideLoadingIndicator() {
-    const loadingElement = document.querySelector('.loading');
-    loadingElement.remove();
   }
 
   /**

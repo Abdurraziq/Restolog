@@ -4,9 +4,7 @@ class DetailPage extends Page {
   constructor() {
     super({
       basePageElement: /* html */`
-        <section id="/main-content" class="container">
-          <div class="loading"></div>
-        </section>
+        <section id="/main-content" class="container"></section>
       `,
       contentElement: 'resto-details',
     });
@@ -17,7 +15,6 @@ class DetailPage extends Page {
   }
 
   _showContent() {
-    super._showContent();
     this.contentElement.details = this._data;
   }
 
