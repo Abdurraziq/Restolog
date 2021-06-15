@@ -19,6 +19,8 @@ class App {
   async renderContent() {
     const url = UrlParser.parseActiveUrlWithCombiner();
     if (url !== '/main-content') {
+      window.scrollTo(0, 0);
+
       const content = new routes[url]();
       const contentElement = content.createElement();
 
