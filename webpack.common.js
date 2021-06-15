@@ -8,7 +8,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/scripts/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'assets/js/script.js',
+    filename: 'assets/js/[hash].js',
     assetModuleFilename: 'assets/[hash][ext]',
     clean: true,
   },
@@ -42,7 +42,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/templates/index.html'),
-      filename: 'index.html',
       favicon: path.resolve(__dirname, 'src/public/images/icons/favicon.ico'),
     }),
     new WebpackPwaManifest({
