@@ -1,4 +1,4 @@
-import 'regenerator-runtime';
+// import 'regenerator-runtime';
 
 import {precacheAndRoute} from 'workbox-precaching';
 import {clientsClaim, setCacheNameDetails} from 'workbox-core';
