@@ -93,7 +93,7 @@ class RestoReview extends HTMLElement {
    */
   _onLoadMoreButtonClick() {
     const allLastReview = this._reviews.slice(3, this._reviews.length);
-    const lastItem = this._reviewList.childNodes[13];
+    const lastItem = this._reviewList.children[4];
     this._reviewList.removeChild(lastItem);
     this._renderReviews(allLastReview);
     this._loadMoreButton.remove();
