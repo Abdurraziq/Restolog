@@ -9,3 +9,17 @@ footer {
   gap: 16px;
   font-size: 0.9em;
 }
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 8px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
