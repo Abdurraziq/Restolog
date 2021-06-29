@@ -1,9 +1,9 @@
-import {Favorite, Home, Detail} from '../view/contents-hendler';
+import {detail, favorite, home} from '../view/pages';
 
 const routes = {
-  '/': Home,
-  '/detail/:id': Detail,
-  '/favorite': Favorite,
+  '/': home,
+  '/detail/:id': detail,
+  '/favorite': favorite,
 };
 
 export default routes;

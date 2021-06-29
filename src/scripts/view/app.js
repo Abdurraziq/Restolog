@@ -21,16 +21,15 @@ class App {
     if (url !== '/main-content') {
       window.scrollTo(0, 0);
 
-      const content = new routes[url]();
-      const contentElement = content.createElement();
+      const presenter = routes[url]();
+      const contentElement = presenter.view;
 
       this._appBar.changeActiveMenuItem(url);
-      this._appBar.backgroundHandler(contentElement.isContainHeroElement);
+      this._appBar.background = contentElement.isHasHeroElement;
 
       this._contentContainer.innerHTML = '';
       this._contentContainer.appendChild(contentElement);
-
-      content.showContent();
+      await presenter.showContent();
     }
   }
 }
