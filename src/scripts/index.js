@@ -1,4 +1,4 @@
-// import 'regenerator-runtime';
+import 'regenerator-runtime';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
@@ -6,10 +6,11 @@ import '../styles/style.scss';
 import './view/components';
 import App from './view/app';
 import {swRegister} from './helper';
+import {getElement} from './helper';
 
 const app = new App({
-  appBar: document.querySelector('app-bar'),
-  contentContainer: document.querySelector('#content'),
+  appBar: getElement('app-bar'),
+  contentContainer: getElement('#content'),
 });
 
 window.addEventListener('load', () => {

@@ -1,4 +1,4 @@
-// import 'regenerator-runtime';
+import 'regenerator-runtime';
 
 import {precacheAndRoute} from 'workbox-precaching';
 import {clientsClaim, setCacheNameDetails} from 'workbox-core';
@@ -6,7 +6,7 @@ import {registerRoute} from 'workbox-routing';
 import {CacheFirst, NetworkFirst} from 'workbox-strategies';
 import {ExpirationPlugin} from 'workbox-expiration';
 import {CacheableResponsePlugin} from 'workbox-cacheable-response';
-import CONFIG from './globals/config';
+import CONFIG from './global/config';
 
 const {
   API_BASE_URL,
