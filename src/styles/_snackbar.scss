@@ -2,7 +2,7 @@
   visibility: hidden;
   max-width: 250px;
   margin-left: -125px;
-  background-color: #333;
+  background-color: #222;
   color: #fff;
   text-align: center;
   border-radius: 8px;
@@ -10,7 +10,7 @@
   position: fixed;
   z-index: 1;
   left: 50%;
-  bottom: 30px;
+  bottom: 80px;
   font-size: 17px;
 }
 
@@ -26,14 +26,14 @@
   }
 
   to {
-    bottom: 30px;
+    bottom: 80px;
     opacity: 1;
   }
 }
 
 @keyframes fadeout {
   from {
-    bottom: 30px;
+    bottom: 80px;
     opacity: 1;
   }
 
