@@ -1,4 +1,4 @@
-import CONFIG from '../globals/config';
+import CONFIG from '../global/config';
 
 /**
  *
@@ -28,15 +28,18 @@ const postData = async (url, data) => {
   return await checkResponse(response);
 };
 
+
 /**
  *
  * @param {Response} response
+ * @return {Promise}
  */
 const checkResponse = async (response) => {
-  if (response.ok) {
+  try {
     return await response.json();
+  } catch (error) {
+    throw new Error('Terjadi kesalahan saat memproses data.');
   }
-  throw new Error('Terjadi kesalahan saat mengirim/menerima data.');
 };
 
 export {getData, postData};
