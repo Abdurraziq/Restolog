@@ -1,3 +1,5 @@
+import {createElement, getElement} from '../../helper';
+
 class Page extends HTMLElement {
   constructor({basePageElement, contentElement}) {
     super();
@@ -7,7 +9,7 @@ class Page extends HTMLElement {
 
   connectedCallback() {
     this._render();
-    this.contentElement = document.createElement(this._contentElement);
+    this.contentElement = createElement(this._contentElement);
     this._contentContainer.appendChild(this.contentElement);
   }
 
@@ -21,7 +23,7 @@ class Page extends HTMLElement {
 
   _render() {
     this.innerHTML = this._basePageElement;
-    this._contentContainer = this.querySelector('section.container');
+    this._contentContainer = getElement('section.container');
   }
 
   /**
@@ -30,9 +32,9 @@ class Page extends HTMLElement {
    */
   showMessage(message) {
     this._contentContainer.innerHTML = /* html*/`
-      <div class="error">
-        <p class="error__heading">Upss.. 😢</p>
-        <p>${message}</p>
+      <div class="message">
+        <p class="message__heading">Upss.. 😢</p>
+        <p class="message__content">${message}</p>
       </div>
     `;
   }
