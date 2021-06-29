@@ -13,13 +13,12 @@ html {
 body {
   font-family: $main__font;
   padding: 0;
-  // min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 main {
-  min-height: calc(100vh + #{$footer__height});
+  min-height: calc(100vh + #{$hero__height - $footer__height});
 }
 
 /* --- Custom element --- */
@@ -53,14 +52,13 @@ detail-page {
   max-width: 500px;
 }
 
-// Error message
-.error {
+// Message
+.message {
   margin: 40px 16px 16px;
   text-align: center;
   line-height: 1.5;
 }
 
-.error__heading {
+.message__heading {
   font-size: 1.4em;
 }
-
