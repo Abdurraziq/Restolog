@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
-import heroImage from '../../../public/images/heros/hero-image.jpg?sizes[]=425,sizes[]=768,sizes[]=1024,sizes[]=1350';
-import heroImageWebp from '../../../public/images/heros/hero-image.jpg?sizes[]=425,sizes[]=768,sizes[]=1024,sizes[]=1350&format=webp';
+import heroImage from '../../../public/images/hero/hero-image.jpg?sizes[]=425,sizes[]=768,sizes[]=1024,sizes[]=1350';
+import heroImageWebp from '../../../public/images/hero/hero-image.jpg?sizes[]=425,sizes[]=768,sizes[]=1024,sizes[]=1350&format=webp';
 
 class HeroElement extends HTMLElement {
   connectedCallback() {
@@ -20,7 +20,7 @@ class HeroElement extends HTMLElement {
           alt="Gambar Hero"
         />
       </picture>
-      <h1 class="hero__heading">Restlog</h1>
+      <h1 class="hero__heading">Restolog</h1>
       <p class="hero__subheading">Restaurant Catalog</p>
       <p class="hero__tagline">Jelajahi berbagai cita rasa Restaurant dalam
         satu katalog komprehensif</p>

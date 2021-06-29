@@ -1,4 +1,5 @@
 import accountIcon from '../../../public/images/icons/account_circle.svg';
+import {createElement, getElement} from '../../helper';
 
 class RestoReview extends HTMLElement {
   constructor() {
@@ -15,7 +16,7 @@ class RestoReview extends HTMLElement {
     this.innerHTML = /* html */`
       <h2>Review Palanggang</h2>
     `;
-    this._reviewList = document.createElement('ul');
+    this._reviewList = createElement('ul');
     this.appendChild(this._reviewList);
 
     this._renderReviewContent();
@@ -83,7 +84,7 @@ class RestoReview extends HTMLElement {
       <li><button id="load-more">Tampilkan review lainnya...</button></li>
     `;
     this._reviewList.insertAdjacentHTML('beforeend', loadMoreButton);
-    this._loadMoreButton = this.querySelector('#load-more');
+    this._loadMoreButton = getElement('#load-more');
     this._loadMoreButton.addEventListener('click', this._loadMoreButtonHandler);
   }
 
@@ -101,7 +102,6 @@ class RestoReview extends HTMLElement {
 
   _renderReviewForm() {
     this.insertAdjacentHTML('beforeend', /* html*/`
-      <h2>Review Kamu</h2>
       <section class="review_item">
         <img
           src="${accountIcon}"
@@ -119,7 +119,8 @@ class RestoReview extends HTMLElement {
           <textarea
             name="review"
             id="review"
-            placeholder="Masukkan review Kamu..."></textarea>
+            placeholder="Masukkan review Kamu..."
+            required></textarea>
           <button type="submit" aria-label="Submit review">
             <span class="btn__loading"></span>
             <span>Submit</span>

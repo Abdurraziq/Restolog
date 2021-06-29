@@ -1,4 +1,4 @@
-import CONFIG from '../../globals/config';
+import CONFIG from '../../global/config';
 
 class RestoItem extends HTMLElement {
   /**
@@ -37,7 +37,7 @@ class RestoItem extends HTMLElement {
         </div>
         <div class="resto__content">
           <a href="/#/detail/${id}"
-            class="resto__title">${name}</a>
+            class="resto__name">${name}</a>
           <p class="resto__description">${description}</p>
         </div>
       </article>

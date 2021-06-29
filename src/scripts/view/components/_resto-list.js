@@ -1,3 +1,5 @@
+import {createElement} from '../../helper';
+
 class RestoList extends HTMLElement {
   connectedCallback() {
     this._renderSkeleton();
@@ -13,7 +15,7 @@ class RestoList extends HTMLElement {
   _renderSkeleton() {
     const numberItemSkeleton = 6;
     for (let index = 0; index < numberItemSkeleton; index++) {
-      const restoItemElement = document.createElement('resto-item');
+      const restoItemElement = createElement('resto-item');
       restoItemElement.renderSkeleton();
       this.appendChild(restoItemElement.firstElementChild);
     }
@@ -22,7 +24,7 @@ class RestoList extends HTMLElement {
   _renderRestoList(restoList) {
     this.innerHTML = '';
     restoList.forEach((resto) => {
-      const restoItemElement = document.createElement('resto-item');
+      const restoItemElement = createElement('resto-item');
       restoItemElement.restoData = resto;
       this.appendChild(restoItemElement.firstElementChild);
     });

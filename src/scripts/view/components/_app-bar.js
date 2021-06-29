@@ -1,4 +1,5 @@
 import logo from '../../../public/images/icons/logo.svg';
+import {getElement} from '../../helper';
 
 class AppBar extends HTMLElement {
   constructor() {
@@ -18,7 +19,7 @@ class AppBar extends HTMLElement {
         <div>
           <a href="/" class="app-bar__logo">
             <img src="${logo}" alt="Logo" width="27px" height="27px">
-            <span>Restlog</span>
+            <span>Restolog</span>
           </a>
         </div>
         <button id="menu-btn" aria-label="Tampilkan Menu">☰</button>
@@ -34,7 +35,7 @@ class AppBar extends HTMLElement {
    * @param {Array} menuList
    */
   setMenu(menuList) {
-    const menuListElement = this.querySelector('.menu__list');
+    const menuListElement = getElement('.menu__list');
     menuList.forEach(({url, label}) => {
       const menuItemElement = /* html*/ `
         <li class="menu__item">
@@ -47,8 +48,8 @@ class AppBar extends HTMLElement {
   }
 
   _initAppBar() {
-    this._bodyElement = document.querySelector('body');
-    this._menuButton = this.querySelector('#menu-btn');
+    this._bodyElement = getElement('body');
+    this._menuButton = getElement('#menu-btn');
     this._menuItems = this.querySelectorAll('.menu__item');
 
     this._menuButton.addEventListener('click', (event) => {
@@ -72,8 +73,8 @@ class AppBar extends HTMLElement {
   }
 
   /**
-   * Digunakan untuk menyembunyikan scrollbar dan mencegah halaman terscroll
-   * saat menu ditampilkan.
+   * Used to hide the scroll bar and prevent the page from scrolling when
+   * the menu is displayed.
    */
   _toggleBodyOverflow() {
     this._bodyElement.classList.toggle('hideoverflow');
@@ -111,8 +112,8 @@ class AppBar extends HTMLElement {
    * @param {string} url
    */
   changeActiveMenuItem(url) {
-    const activeMenu = this.querySelector('.menu__item.active');
-    const menuToActivate = this.querySelector(`[href="#${url}"]`);
+    const activeMenu = getElement('.menu__item.active');
+    const menuToActivate = getElement(`[href="#${url}"]`);
 
     activeMenu?.classList.remove('active');
     menuToActivate?.parentElement.classList.add('active');
@@ -120,10 +121,10 @@ class AppBar extends HTMLElement {
   }
 
   /**
-   * Methode for add or remove background in AppBar.
+   * Setter to add or remove background in AppBar.
    * @param {boolean} isContainHeroElement
    */
-  backgroundHandler(isContainHeroElement) {
+  set background(isContainHeroElement) {
     if (isContainHeroElement) {
       this._removeAppBarBackground();
       this._addTransition();
