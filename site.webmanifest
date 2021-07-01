@@ -1,0 +1,59 @@
+{
+  "icons": [
+    {
+      "src": "./assets/icons/icon_512x512.cd34d545dc1f9bdc0aab2fc2436355a6.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon_384x384.2bbe8a4053dbe0e41e0832f55e5b756e.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon_256x256.5126d599c0790066743f64cebf731358.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon_192x192.61bb5e4f747d47c0e8a60dde5408c87a.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon_128x128.00e6d484cc53c7870fd49f23c24974c2.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon_96x96.eaf7b66b50fd857fa24311f62960f87c.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon_72x72.219cd98f73f6a996097bfc7a553446dd.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon_180x180.748bbfa54fb75df96c658cf57d185e14.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "name": "Restolog",
+  "short_name": "Restolog",
+  "orientation": "any",
+  "display": "standalone",
+  "start_url": "./index.html",
+  "description": "A restaurant catalog application",
+  "background_color": "#FFFFFF",
+  "theme_color": "#252A34"
+}
