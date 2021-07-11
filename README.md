@@ -1,34 +1,6 @@
 # Restolog
 
-**Restolog** *(Restaurant Catalog)* - Aplikasi katalog restoran untuk submission kelas Menjadi Front-End Developer Expert.
-
-## Daftar Isi
-
-- [Restolog](#restolog)
-  - [Daftar Isi](#daftar-isi)
-  - [Sekilas](#sekilas)
-  - [Scripts](#scripts)
-  - [Dev vs Build Production](#dev-vs-build-production)
-    - [Loader dan Plugin](#loader-dan-plugin)
-    - [Feature](#feature)
-  - [Testing](#testing)
-    - [I. Components](#i-components)
-      - [1. `app-bar`](#1-app-bar)
-      - [2. `resto-list`](#2-resto-list)
-      - [3. `resto-detail`](#3-resto-detail)
-    - [II. Data-Source](#ii-data-source)
-      - [1. Resto Detail](#1-resto-detail)
-      - [2. Resto List](#2-resto-list-1)
-      - [3. Resto Review](#3-resto-review)
-      - [4. Favorite Resto Idb Contract](#4-favorite-resto-idb-contract)
-    - [C. Favorite](#c-favorite)
-      - [1. Menyukai suatu resto](#1-menyukai-suatu-resto)
-      - [2. Berhenti menyukai suatu resto](#2-berhenti-menyukai-suatu-resto)
-    - [D. Resto-List](#d-resto-list)
-  - [E2E test](#e2e-test)
-    - [A. Memfavoritkan suatu restaurant](#a-memfavoritkan-suatu-restaurant)
-    - [B. Berhenti memfavoritkan suatu restaurant](#b-berhenti-memfavoritkan-suatu-restaurant)
-    - [C. Me-review Suatu Restaurant](#c-me-review-suatu-restaurant)
+**Restolog** *(Restaurant Catalog)* - Aplikasi katalog restoran untuk submission kelas [Menjadi Front-End Developer Expert](https://www.dicoding.com/academies/219).
 
 ## Sekilas
 
