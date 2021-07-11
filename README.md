@@ -32,6 +32,8 @@
 
 ## Sekilas
 
+![Screencapture](screencapture.png)
+
 Web app ini dibuat dengan menggunakan JavaScript *bundler* **Webpack** dengan fitur-fitur;
 
 1. PWA - *Progressive Web Application* dengan menggunakan `Workbox-InjectManifest` dan `WebpackPwaManifest`
